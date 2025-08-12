@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PC Components</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Build Your Dream PC</h1>
+            <form id="componentsForm" action="add_to_cart.php" method="POST">
+                <div class="component-list">
+                    
+                    <!-- Processor Section -->
+                    <div class="component-section">
+                        <h3>Processor</h3>
+                        <div class="options">
+                            <label>
+                                <img src="images/inteli7.webp" alt="Intel i7 Processor">
+                                <input type="radio" name="Processor" value="intel i7 Processor"> Intel i7
+                            </label>
+                            <label>
+                                <img src="images/i5.webp" alt="Intel i5 Processor">
+                                <input type="radio" name="Processor" value="intel i5 Processor"> Intel i5
+                            </label>
+                            <label>
+                                <img src="images/ryzen7.webp" alt="AMD Ryzen 7 Processor">
+                                <input type="radio" name="Processor" value="amd ryzen 7 Processor"> AMD Ryzen 7
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Motherboard Section -->
+                    <div class="component-section">
+                        <h3>Motherboard</h3>
+                        <div class="options">
+                            <label>
+                                <img src="images/asusmb.webp" alt="ASUS Motherboard">
+                                <input type="radio" name="Motherboard" value="ASUS"> ASUS
+                            </label>
+                            <label>
+                                <img src="images/msi.webp" alt="MSI Motherboard">
+                                <input type="radio" name="Motherboard" value="MSI"> MSI
+                            </label>
+                            <label>
+                                <img src="images/antvalue.webp" alt="Ant Value Motherboard">
+                                <input type="radio" name="Motherboard" value="Ant value"> Ant Value
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- RAM Section -->
+                    <div class="component-section">
+                        <h3>RAM</h3>
+                        <div class="options">
+                            <label>
+                                <img src="images/4gbddr4.webp" alt="4GB DDR4 RAM">
+                                <input type="radio" name="RAM" value="4gb ddr4"> 4GB DDR4
+                            </label>
+                            <label>
+                                <img src="images/8gbddr4.webp" alt="8GB DDR4 RAM">
+                                <input type="radio" name="RAM" value="8gb ddr4"> 8GB DDR4
+                            </label>
+                            <label>
+                                <img src="images/16gbddr4.webp" alt="16GB DDR4 RAM">
+                                <input type="radio" name="RAM" value="16gb ddr4"> 16GB DDR4
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Graphics Card Section -->
+                    <div class="component-section">
+                        <h3>Graphics Card</h3>
+                        <div class="options">
+                            <label>
+                                <img src="images/gtx1650.webp" alt="GTX 1650 Graphics Card">
+                                <input type="radio" name="Graphics Card" value="GTX 1650"> GTX 1650
+                            </label>
+                            <label>
+                                <img src="images/rtx3070.webp" alt="RTX 3070 Graphics Card">
+                                <input type="radio" name="Graphics Card" value="RTX 3070"> RTX 3070
+                            </label>
+                            <label>
+                                <img src="images/rtx4080.webp" alt="RTX 4080 Graphics Card">
+                                <input type="radio" name="Graphics Card" value="RTX 4080"> RTX 4080
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Power Supply Section -->
+                    <div class="component-section">
+                        <h3>Power Supply</h3>
+                        <div class="options">
+                            <label>
+                                <img src="images/smps300.webp" alt="300W Power Supply">
+                                <input type="radio" name="Power Supply" value="300 W"> 300W
+                            </label>
+                            <label>
+                                <img src="images/smps500.webp" alt="500W Power Supply">
+                                <input type="radio" name="Power Supply" value="500 W"> 500W
+                            </label>
+                            <label>
+                                <img src="images/smps700.webp" alt="700W Power Supply">
+                                <input type="radio" name="Power Supply" value="700 W"> 700W
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- SSD Section -->
+                    <div class="component-section">
+                        <h3>SSD</h3>
+                        <div class="options">
+                            <label>
+                                <img src="images/250gbssd.webp" alt="250GB SSD">
+                                <input type="radio" name="SSD" value="250 gb"> 250GB
+                            </label>
+                            <label>
+                                <img src="images/500gbssd.webp" alt="512GB SSD">
+                                <input type="radio" name="SSD" value="512 gb"> 512GB
+                            </label>
+                            <label>
+                                <img src="images/itbssd.webp" alt="1TB SSD">
+                                <input type="radio" name="SSD" value="1 tb"> 1TB
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- HDD Section -->
+                    <div class="component-section">
+                        <h3>HDD</h3>
+                        <div class="options">
+                            <label>
+                                <img src="images/500gbhdd.webp" alt="512GB HDD">
+                                <input type="radio" name="HDD" value="512 gb"> 512GB
+                            </label>
+                            <label>
+                                <img src="images/1tbhdd.webp" alt="1TB HDD">
+                                <input type="radio" name="HDD" value="1 tb"> 1TB
+                            </label>
+                            <label>
+                                <img src="images/2tbhhd.webp" alt="2TB HDD">
+                                <input type="radio" name="HDD" value="2 tb"> 2TB
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="component-section">
+                        <h3>Keyboard</h3>
+                        <div class="options">
+                            <label>
+                                <img src="images/withnum.webp" alt="keyboard with numpad">
+                                <input type="radio" name="Keyboard" value="keyboard with numpad">keyboard with numpad
+                            </label>
+                            <label>
+                                <img src="images/withoutnum.webp" alt="keyboard without numpad">
+                                <input type="radio" name="Keyboard" value="keyboard without numpad">keyboard without numpad
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="component-section">
+                        <h3>Mouse</h3>
+                        <div class="options">
+                            <label>
+                                <img src="images/gamingmouse.webp" alt="gaming mouse(wireless)">
+                                <input type="radio" name="Mouse" value="gaming mouse(wireless)">gaming mouse(wireless)
+                            </label>
+                            <label>
+                                <img src="images/wirelessmouse.webp" alt="wireless mouse">
+                                <input type="radio" name="Mouse" value="wireless mouse">wireless mouse
+                            </label>
+                            <label>
+                                <img src="images/wiredmouse.webp" alt="wired mouse">
+                                <input type="radio" name="Mouse" value="wired mouse">wired mouse
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Cooling System Section -->
+                    <div class="component-section">
+                        <h3>Cooling System</h3>
+                        <div class="options">
+                            <label>
+                                <img src="images/air.webp" alt="Air Cooled">
+                                <input type="radio" name="Cooling System" value="Air cooled"> Air Cooled
+                            </label>
+                            <label>
+                                <img src="images/liquid.webp" alt="Liquid Cooled">
+                                <input type="radio" name="Cooling System" value="Liquid cooled"> Liquid Cooled
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Additional Accessories -->
+                    <div class="component-section">
+                        <h3>Accessories</h3>
+                        <div class="options">
+                            <label>
+                                <img src="images/headphone.webp" alt="Headphones">
+                                <input type="checkbox" name="components[]" value="Headphones"> Headphones
+                            </label>
+                            <label>
+                                <img src="images/webcam.webp" alt="Webcam">
+                                <input type="checkbox" name="components[]" value="Webcam"> Webcam
+                            </label>
+                            <label>
+                                <img src="images/wifi.webp" alt="Wi-Fi Adapter">
+                                <input type="checkbox" name="components[]" value="Wi-Fi Adapter"> Wi-Fi Adapter
+                            </label>
+                            <label>
+                                <img src="images/surge.webp" alt="Surge Protector">
+                                <input type="checkbox" name="components[]" value="Surge Protector"> Surge Protector
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+                <button type="submit">Add to Cart</button>
+            </form>
+        </div>
+    </body>
+</html>
